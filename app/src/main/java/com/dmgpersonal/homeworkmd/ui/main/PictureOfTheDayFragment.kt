@@ -5,11 +5,19 @@ import android.net.Uri
 import androidx.lifecycle.ViewModelProvider
 import android.os.Bundle
 import android.view.*
+<<<<<<< HEAD
+=======
+import android.widget.ImageView
+>>>>>>> Finished homework #1
 import androidx.fragment.app.Fragment
 import android.widget.TextView
 import android.widget.Toast
 import androidx.constraintlayout.widget.ConstraintLayout
 import coil.load
+<<<<<<< HEAD
+=======
+import coil.size.Scale
+>>>>>>> Finished homework #1
 import com.dmgpersonal.homeworkmd.*
 import com.dmgpersonal.homeworkmd.databinding.FragmentPictureOfTheDayBinding
 import com.google.android.material.bottomsheet.BottomSheetBehavior
@@ -55,7 +63,11 @@ class PictureOfTheDayFragment : Fragment() {
                 }
             }
             is PictureOfTheDayData.Loading -> {
+<<<<<<< HEAD
                 // Loading
+=======
+                binding.imageView.load(R.drawable.loading)
+>>>>>>> Finished homework #1
             }
             is PictureOfTheDayData.Error -> {
                 toast(data.error.message)
@@ -73,6 +85,16 @@ class PictureOfTheDayFragment : Fragment() {
             })
         }
         setBottomAppBar(view)
+<<<<<<< HEAD
+=======
+        binding.fab.setOnClickListener {
+            if(bottomSheetBehavior.state == BottomSheetBehavior.STATE_COLLAPSED) {
+                bottomSheetBehavior.state = BottomSheetBehavior.STATE_EXPANDED
+            } else {
+                bottomSheetBehavior.state = BottomSheetBehavior.STATE_COLLAPSED
+            }
+        }
+>>>>>>> Finished homework #1
     }
 
     override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
