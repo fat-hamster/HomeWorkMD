@@ -6,18 +6,18 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.Fragment
-import com.dmgpersonal.homeworkmd.databinding.FragmentChipsBinding
+import com.dmgpersonal.homeworkmd.databinding.FragmentSettingsBinding
 import com.google.android.material.chip.Chip
 
-class ChipsFragment : Fragment() {
-    private var _binding: FragmentChipsBinding? = null
+class SettingsFragment : Fragment() {
+    private var _binding: FragmentSettingsBinding? = null
     private val binding get() = _binding!!
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        _binding = FragmentChipsBinding.inflate(inflater, container, false)
+        _binding = FragmentSettingsBinding.inflate(inflater, container, false)
         return binding.root
     }
 
@@ -45,6 +45,6 @@ class ChipsFragment : Fragment() {
     }
 
     companion object {
-        fun newInstance() = ChipsFragment()
+        fun newInstance() = SettingsFragment()
     }
 }

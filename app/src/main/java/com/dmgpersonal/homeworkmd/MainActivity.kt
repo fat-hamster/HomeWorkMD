@@ -18,5 +18,14 @@ class MainActivity : AppCompatActivity() {
                 .replace(R.id.container, PictureOfTheDayFragment.newInstance())
                 .commitNow()
         }
+        if(themePink) {
+            setTheme(R.style.IndigoTheme)
+        } else {
+            setTheme(R.style.PinkTheme)
+        }
+    }
+
+    companion object {
+        var themePink = true
     }
 }

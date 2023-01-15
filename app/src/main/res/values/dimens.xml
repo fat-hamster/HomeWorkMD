@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin_top_16dp">16dp</dimen>
+    <dimen name="icon_start_padding_10dp">10dp</dimen>
+    <dimen name="layout_margin_8dp">8dp</dimen>
+    <dimen name="text_size_18sp">18sp</dimen>
+    <dimen name="space_horizontal_25dp">25dp</dimen>
+    <dimen name="padding_bottom_16dp">16dp</dimen>
+    <dimen name="margin_start_16dp">16dp</dimen>
+</resources>

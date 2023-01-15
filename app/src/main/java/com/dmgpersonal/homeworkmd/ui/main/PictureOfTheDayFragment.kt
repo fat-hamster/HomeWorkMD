@@ -95,9 +95,13 @@ class PictureOfTheDayFragment : Fragment() {
                         "tag")
                 }
             }
+            R.id.app_bar_fav -> {
+                MainActivity.themePink = !MainActivity.themePink
+                activity?.recreate()
+            }
             R.id.app_bar_settings ->
                 activity?.supportFragmentManager?.beginTransaction()?.add(R.id.container,
-                    ChipsFragment()
+                    SettingsFragment()
                 )?.addToBackStack(null)
                     ?.commit()
         }
