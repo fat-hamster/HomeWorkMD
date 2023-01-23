@@ -102,7 +102,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/layout_margin_8dp"
-            android:text="@string/choose_one"
+            android:text="@string/select_theme"
             android:textSize="@dimen/text_size_18sp" />
 
         <com.google.android.material.chip.ChipGroup
@@ -112,22 +112,25 @@
             app:singleSelection="true">
 
             <com.google.android.material.chip.Chip
+                android:id="@+id/default_theme"
                 style="@style/Widget.MaterialComponents.Chip.Choice"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/choice_a" />
+                android:text="@string/default_theme" />
 
             <com.google.android.material.chip.Chip
+                android:id="@+id/indigo_theme"
                 style="@style/Widget.MaterialComponents.Chip.Choice"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/choice_b" />
+                android:text="@string/indigo_theme" />
 
             <com.google.android.material.chip.Chip
+                android:id="@+id/pink_theme"
                 style="@style/Widget.MaterialComponents.Chip.Choice"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/choice_c" />
+                android:text="@string/pink_theme" />
         </com.google.android.material.chip.ChipGroup>
 
         <HorizontalScrollView

@@ -1,5 +1,6 @@
 package com.dmgpersonal.homeworkmd
 
+import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.dmgpersonal.homeworkmd.databinding.ActivityMainBinding
@@ -11,6 +12,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        setTheme(appTheme)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
         if (savedInstanceState == null) {
@@ -18,14 +20,14 @@ class MainActivity : AppCompatActivity() {
                 .replace(R.id.container, PictureOfTheDayFragment.newInstance())
                 .commitNow()
         }
-        if(themePink) {
-            setTheme(R.style.IndigoTheme)
-        } else {
-            setTheme(R.style.PinkTheme)
-        }
+    }
+
+    override fun recreate() {
+        setTheme(appTheme)
+        super.recreate()
     }
 
     companion object {
-        var themePink = true
+        var appTheme = R.id.default_theme
     }
 }

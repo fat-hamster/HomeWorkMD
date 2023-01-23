@@ -74,11 +74,7 @@ class PictureOfTheDayFragment : Fragment() {
         }
         setBottomAppBar(view)
         binding.fab.setOnClickListener {
-            if(bottomSheetBehavior.state == BottomSheetBehavior.STATE_COLLAPSED) {
-                bottomSheetBehavior.state = BottomSheetBehavior.STATE_EXPANDED
-            } else {
-                bottomSheetBehavior.state = BottomSheetBehavior.STATE_COLLAPSED
-            }
+            //
         }
     }
 
@@ -96,12 +92,18 @@ class PictureOfTheDayFragment : Fragment() {
                 }
             }
             R.id.app_bar_fav -> {
-                MainActivity.themePink = !MainActivity.themePink
-                activity?.recreate()
+                //
+            }
+            R.id.app_bar_more -> {
+                if(bottomSheetBehavior.state == BottomSheetBehavior.STATE_COLLAPSED) {
+                    bottomSheetBehavior.state = BottomSheetBehavior.STATE_EXPANDED
+                } else {
+                    bottomSheetBehavior.state = BottomSheetBehavior.STATE_COLLAPSED
+                }
             }
             R.id.app_bar_settings ->
                 activity?.supportFragmentManager?.beginTransaction()?.add(R.id.container,
-                    SettingsFragment()
+                    SettingsFragment.newInstance()
                 )?.addToBackStack(null)
                     ?.commit()
         }

@@ -42,4 +42,10 @@
     <string name="text">Text</string>
     <string name="outlined_box_text_field">Outlined Box Text Field</string>
     <string name="card">Card</string>
+    <string name="select_theme">Change app theme</string>
+    <string name="default_theme">Default theme</string>
+    <string name="indigo_theme">Indigo theme</string>
+    <string name="pink_theme">Pink theme</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
