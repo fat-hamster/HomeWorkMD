@@ -53,7 +53,7 @@ class ViewPagerActivity : AppCompatActivity() {
     }
 
     private fun setWeatherTabHighlighted(layoutInflater: LayoutInflater) {
-        //
+
     }
 
     private fun setMarsTabHighlighted(layoutInflater: LayoutInflater) {
