@@ -1,4 +1,4 @@
-package com.dmgpersonal.homeworkmd.ui.main
+package com.dmgpersonal.homeworkmd.model
 
 import androidx.lifecycle.ViewModel
 

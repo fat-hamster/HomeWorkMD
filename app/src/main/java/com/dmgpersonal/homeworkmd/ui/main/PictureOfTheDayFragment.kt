@@ -12,6 +12,10 @@ import androidx.lifecycle.ViewModelProvider
 import coil.load
 import com.dmgpersonal.homeworkmd.*
 import com.dmgpersonal.homeworkmd.databinding.FragmentPictureOfTheDayBinding
+import com.dmgpersonal.homeworkmd.fragments.SettingsFragment
+import com.dmgpersonal.homeworkmd.model.PictureOfTheDayData
+import com.dmgpersonal.homeworkmd.model.PictureOfTheDayViewModel
+import com.dmgpersonal.homeworkmd.ui.pagerview.ApiActivity
 import com.google.android.material.bottomsheet.BottomSheetBehavior
 
 class PictureOfTheDayFragment : Fragment() {
@@ -92,7 +96,9 @@ class PictureOfTheDayFragment : Fragment() {
                 }
             }
             R.id.app_bar_fav -> {
-                //
+                activity?.let {
+                    startActivity(Intent(it, ViewPagerActivity::class.java))
+                }
             }
             R.id.app_bar_more -> {
                 if(bottomSheetBehavior.state == BottomSheetBehavior.STATE_COLLAPSED) {
@@ -102,9 +108,9 @@ class PictureOfTheDayFragment : Fragment() {
                 }
             }
             R.id.app_bar_settings ->
-                activity?.supportFragmentManager?.beginTransaction()?.add(R.id.container,
-                    SettingsFragment.newInstance()
-                )?.addToBackStack(null)
+                activity?.supportFragmentManager?.beginTransaction()
+                    ?.add(R.id.container, SettingsFragment.newInstance())
+                    ?.addToBackStack(null)
                     ?.commit()
         }
         return super.onOptionsItemSelected(item)

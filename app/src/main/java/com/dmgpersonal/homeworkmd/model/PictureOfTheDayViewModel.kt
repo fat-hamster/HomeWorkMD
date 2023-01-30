@@ -1,8 +1,9 @@
-package com.dmgpersonal.homeworkmd
+package com.dmgpersonal.homeworkmd.model
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import com.dmgpersonal.homeworkmd.BuildConfig
 //import com.dmgpersonal.homeworkmd.BuildConfig
 import retrofit2.Call
 import retrofit2.Callback

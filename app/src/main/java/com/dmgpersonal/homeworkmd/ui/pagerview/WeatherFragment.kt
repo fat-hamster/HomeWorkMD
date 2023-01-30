@@ -1,18 +1,19 @@
-package com.dmgpersonal.homeworkmd
+package com.dmgpersonal.homeworkmd.ui.pagerview
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
+import com.dmgpersonal.homeworkmd.R
 
-class EarthFragment : Fragment() {
+class WeatherFragment : Fragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.fragment_earth, container, false)
+        return inflater.inflate(R.layout.fragment_weather, container, false)
     }
 }

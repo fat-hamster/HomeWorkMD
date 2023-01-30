@@ -1,4 +1,4 @@
-package com.dmgpersonal.homeworkmd
+package com.dmgpersonal.homeworkmd.model
 
 sealed class PictureOfTheDayData {
     data class Success(val serverResponseData: PODServerResponseData) : PictureOfTheDayData()

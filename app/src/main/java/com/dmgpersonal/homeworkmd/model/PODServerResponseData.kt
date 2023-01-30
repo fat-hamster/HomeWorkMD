@@ -1,4 +1,4 @@
-package com.dmgpersonal.homeworkmd
+package com.dmgpersonal.homeworkmd.model
 
 import com.google.gson.annotations.SerializedName
 

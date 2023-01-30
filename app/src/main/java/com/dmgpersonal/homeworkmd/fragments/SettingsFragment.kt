@@ -1,4 +1,4 @@
-package com.dmgpersonal.homeworkmd
+package com.dmgpersonal.homeworkmd.fragments
 
 import android.content.Intent
 import android.os.Bundle
@@ -8,6 +8,8 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.core.app.TaskStackBuilder
 import androidx.fragment.app.Fragment
+import com.dmgpersonal.homeworkmd.MainActivity
+import com.dmgpersonal.homeworkmd.R
 import com.dmgpersonal.homeworkmd.databinding.FragmentSettingsBinding
 import com.google.android.material.chip.ChipGroup
 

@@ -1,6 +1,5 @@
 package com.dmgpersonal.homeworkmd
 
-import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.dmgpersonal.homeworkmd.databinding.ActivityMainBinding
@@ -28,6 +27,6 @@ class MainActivity : AppCompatActivity() {
     }
 
     companion object {
-        var appTheme = R.id.default_theme
+        var appTheme = R.id.indigo_theme
     }
 }
