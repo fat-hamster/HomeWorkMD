@@ -48,7 +48,7 @@
     <string name="pink_theme">Pink theme</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="earth">Earth</string>
-    <string name="mars">Mars</string>
-    <string name="solar_system">Solar system</string>
+    <string name="earth_tab_text">Earth</string>
+    <string name="mars_tab_text">Mars</string>
+    <string name="weather_tab_text">Solar system</string>
 </resources>

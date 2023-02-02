@@ -1,15 +1,13 @@
 package com.dmgpersonal.homeworkmd.ui.pagerview
 
 import androidx.fragment.app.Fragment
-import androidx.fragment.app.FragmentManager
-import androidx.fragment.app.FragmentStatePagerAdapter
+import androidx.fragment.app.FragmentActivity
+import androidx.viewpager2.adapter.FragmentStateAdapter
 
-class ViewPagerAdapter(fragmentManager: FragmentManager) :
-FragmentStatePagerAdapter(fragmentManager, BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT)
+class ViewPagerAdapter(fragmentActivity: FragmentActivity) : FragmentStateAdapter(fragmentActivity)
 {
     private val fragments = arrayOf(EarthFragment(), MarsFragment(), WeatherFragment())
-
-    override fun getItem(position: Int): Fragment {
+    override fun createFragment(position: Int): Fragment {
         return when (position) {
             0 -> fragments[EARTH_FRAGMENT]
             1 -> fragments[MARS_FRAGMENT]
@@ -18,12 +16,8 @@ FragmentStatePagerAdapter(fragmentManager, BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT
         }
     }
 
-    override fun getCount(): Int {
+    override fun getItemCount(): Int {
         return fragments.size
-    }
-
-    override fun getPageTitle(position: Int): CharSequence? {
-        return null
     }
 
     companion object {

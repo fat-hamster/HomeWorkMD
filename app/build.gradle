@@ -48,6 +48,7 @@ dependencies {
     // Core
     implementation 'androidx.core:core-ktx:1.8.0'
     implementation 'androidx.appcompat:appcompat:1.5.1'
+    implementation 'com.google.android.material:material:1.7.0-alpha01'
 
     // UI
     implementation 'com.google.android.material:material:1.7.0'
@@ -67,6 +68,7 @@ dependencies {
     implementation 'io.coil-kt:coil:1.4.0'
     implementation 'androidx.core:core-ktx:+'
     implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0'
+    implementation 'androidx.viewpager2:viewpager2:1.0.0'
 
     // Test
     testImplementation 'junit:junit:4.13.2'

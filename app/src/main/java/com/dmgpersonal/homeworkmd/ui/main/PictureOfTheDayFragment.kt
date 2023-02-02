@@ -16,6 +16,7 @@ import com.dmgpersonal.homeworkmd.fragments.SettingsFragment
 import com.dmgpersonal.homeworkmd.model.PictureOfTheDayData
 import com.dmgpersonal.homeworkmd.model.PictureOfTheDayViewModel
 import com.dmgpersonal.homeworkmd.ui.pagerview.ApiActivity
+import com.dmgpersonal.homeworkmd.ui.pagerview.BottomNavigationActivity
 import com.google.android.material.bottomsheet.BottomSheetBehavior
 
 class PictureOfTheDayFragment : Fragment() {
@@ -89,6 +90,8 @@ class PictureOfTheDayFragment : Fragment() {
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when (item.itemId) {
+            R.id.app_bar_bottom_navigation -> activity?.let {
+                startActivity(Intent(it, BottomNavigationActivity::class.java))}
             android.R.id.home -> {
                 activity?.let {
                     BottomNavigationDrawerFragment().show(it.supportFragmentManager,

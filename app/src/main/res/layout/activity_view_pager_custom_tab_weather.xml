@@ -11,7 +11,7 @@
         android:drawableStart="@drawable/ic_system"
         android:drawablePadding="10dp"
         android:gravity="center_vertical"
-        android:text="@string/solar_system"
+        android:text="@string/weather_tab_text"
         android:textColor="@color/colorPrimary"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"

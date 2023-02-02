@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/bottom_view_earth"
+        android:icon="@drawable/ic_earth"
+        android:title="@string/earth_tab_text" />
+    <item
+        android:id="@+id/bottom_view_mars"
+        android:icon="@drawable/ic_mars"
+        android:title="@string/mars_tab_text" />
+    <item
+        android:id="@+id/bottom_view_weather"
+        android:icon="@drawable/ic_system"
+        android:title="@string/weather_tab_text" />
+    <item
+        android:id="@+id/navigation_one"
+        android:icon="@drawable/ic_archive"
+        android:title="На экран 1" />
+    <item
+        android:id="@+id/navigation_two"
+        android:icon="@drawable/ic_send"
+        android:title="На экран 2" />
+</menu>

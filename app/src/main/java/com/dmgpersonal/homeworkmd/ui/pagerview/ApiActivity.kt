@@ -16,20 +16,7 @@ class ApiActivity : AppCompatActivity() {
         binding = ActivityViewPagerBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.viewPager.adapter = ViewPagerAdapter(supportFragmentManager)
-        binding.tabLayout.setupWithViewPager(binding.viewPager)
-
-        setCustomTabs()
-    }
-
-    private fun setCustomTabs() {
-        val layoutInflater = LayoutInflater.from(this)
-        binding.tabLayout.getTabAt(EARTH)?.customView =
-            layoutInflater.inflate(R.layout.activity_view_pager_custom_tab_earth, null)
-        binding.tabLayout.getTabAt(MARS)?.customView =
-            layoutInflater.inflate(R.layout.activity_view_pager_custom_tab_mars, null)
-        binding.tabLayout.getTabAt(WEATHER)?.customView =
-            layoutInflater.inflate(R.layout.activity_view_pager_custom_tab_system, null)
+        binding.viewPager.adapter = ViewPagerAdapter(this)
     }
 
     companion object {
