@@ -23,12 +23,6 @@ FragmentStatePagerAdapter(fragmentManager, BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT
     }
 
     override fun getPageTitle(position: Int): CharSequence? {
-//        return when (position) {
-//            EARTH_FRAGMENT -> "Earth"
-//            MARS_FRAGMENT -> "Mars"
-//            WEATHER_FRAGMENT -> "Weather"
-//            else -> "Earth"
-//        }
         return null
     }
 
